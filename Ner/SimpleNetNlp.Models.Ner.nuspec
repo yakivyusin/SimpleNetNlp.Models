@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SimpleNetNlp.Models.Ner</id>
+    <version>3.7.0</version>
+    <authors>yakivyusin</authors>
+    <owners>yakivyusin</owners>
+    <projectUrl>https://github.com/yakivyusin/SimpleNetNlp</projectUrl>
+    <description>Resource package that contains named-entity recognition for SimpleNetNlp project (simple C# wrapper for Stanford CoreNLP).</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>nlp stanford CoreNLP NER</tags>
+    <dependencies>
+      <dependency id="SimpleNetNlp" version="3.7.0" />
+    </dependencies>
+  </metadata>
+</package>
