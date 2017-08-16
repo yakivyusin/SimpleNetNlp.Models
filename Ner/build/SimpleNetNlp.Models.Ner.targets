@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
-      <CopySourcePath Include="$(ProjectDir)nlp-models\ner\**\*.*" /> 
+      <CopyNerSourcePath Include="$(ProjectDir)nlp-models\ner\**\*.*" /> 
 	</ItemGroup>
     <Target Name="NerModelCopy" AfterTargets="Build">
-        <Copy SourceFiles="@(CopySourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\ner\%(CopySourcePath.RecursiveDir)" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CopyNerSourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\ner\%(CopySourcePath.RecursiveDir)" SkipUnchangedFiles="true" />
     </Target>
 </Project>

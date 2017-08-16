@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
-      <CopySourcePath Include="$(ProjectDir)nlp-models\pos\**\*.*" /> 
+      <CopyPosSourcePath Include="$(ProjectDir)nlp-models\pos\*.*" /> 
 	</ItemGroup>
     <Target Name="PoSModelCopy" AfterTargets="Build">
-        <Copy SourceFiles="@(CopySourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\pos-tagger\english-left3words\%(CopySourcePath.RecursiveDir)" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CopyPosSourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\pos-tagger\english-left3words\" SkipUnchangedFiles="true" />
     </Target>
 </Project>
