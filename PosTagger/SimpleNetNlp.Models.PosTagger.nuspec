@@ -2,15 +2,13 @@
 <package >
   <metadata>
     <id>SimpleNetNlp.Models.PosTagger</id>
-    <version>3.7.0.1</version>
+    <version>3.8.0</version>
     <authors>yakivyusin</authors>
     <owners>yakivyusin</owners>
     <projectUrl>https://github.com/yakivyusin/SimpleNetNlp</projectUrl>
     <description>Resource package that contains pos tagger for SimpleNetNlp project (simple C# wrapper for Stanford CoreNLP).</description>
-    <copyright>Copyright 2017</copyright>
+    <copyright>Copyright 2018</copyright>
     <tags>nlp stanford CoreNLP POS</tags>
-    <dependencies>
-      <dependency id="SimpleNetNlp" version="3.7.0" />
-    </dependencies>
+	<releaseNotes>Updated version to 3.8 and removed dll package from dependencies.</releaseNotes>
   </metadata>
 </package>
