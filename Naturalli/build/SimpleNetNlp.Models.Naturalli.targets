@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<ItemGroup>
-      <CopyNatSourcePath Include="$(ProjectDir)nlp-models\naturalli\**\*.*" /> 
+      <CopyNatSourcePath1 Include="$(ProjectDir)nlp-models\naturalli\*.*" />
+	  <CopyNatSourcePath2 Include="$(ProjectDir)nlp-models\naturalli\affinities\*.*" /> 
 	</ItemGroup>
     <Target Name="NaturalliModelCopy" AfterTargets="Build">
-        <Copy SourceFiles="@(CopyNatSourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\naturalli\%(CopySourcePath.RecursiveDir)" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CopyNatSourcePath1)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\naturalli\" SkipUnchangedFiles="true" />
+		<Copy SourceFiles="@(CopyNatSourcePath2)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\naturalli\affinities\" SkipUnchangedFiles="true" />
     </Target>
 </Project>
