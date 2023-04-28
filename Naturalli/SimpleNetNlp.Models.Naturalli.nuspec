@@ -2,13 +2,17 @@
 <package >
   <metadata>
     <id>SimpleNetNlp.Models.Naturalli</id>
-    <version>3.8.0.1</version>
+    <version>4.5.0</version>
     <authors>yakivyusin</authors>
     <owners>yakivyusin</owners>
     <projectUrl>https://github.com/yakivyusin/SimpleNetNlp</projectUrl>
     <description>Resource package that contains Open IE model for SimpleNetNlp project (simple C# wrapper for Stanford CoreNLP).</description>
     <copyright>Copyright 2018</copyright>
     <tags>nlp stanford CoreNLP openie</tags>
-    <releaseNotes>Fixed copying of model files.</releaseNotes>
+    <releaseNotes>Updated assets to 4.5.0 and made them transitive.</releaseNotes>
   </metadata>
+  <files>
+    <file src="SimpleNetNlp.Models.Naturalli.props" target="buildTransitive" />
+    <file src="nlp-models\**" target="buildTransitive\edu\stanford\nlp\models\naturalli" />  
+  </files>
 </package>
