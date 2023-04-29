@@ -1,14 +1,19 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>SimpleNetNlp.Models.Ner</id>
-    <version>3.8.0</version>
+    <version>4.5.0</version>
     <authors>yakivyusin</authors>
     <owners>yakivyusin</owners>
     <projectUrl>https://github.com/yakivyusin/SimpleNetNlp</projectUrl>
     <description>Resource package that contains named-entity recognition for SimpleNetNlp project (simple C# wrapper for Stanford CoreNLP).</description>
     <copyright>Copyright 2018</copyright>
     <tags>nlp stanford CoreNLP NER</tags>
-    <releaseNotes>Updated version to 3.8 and removed dll package from dependencies.</releaseNotes>
+    <releaseNotes>Updated assets to 4.5.0 and made them transitive.</releaseNotes>
   </metadata>
+  <files>
+    <file src="SimpleNetNlp.Models.Ner.props" target="buildTransitive" />
+    <file src="nlp-models\ner\**" target="buildTransitive\edu\stanford\nlp\models\ner" />
+    <file src="nlp-models\kbp\**" target="buildTransitive\edu\stanford\nlp\models\kbp\english\gazetteers" />
+  </files>
 </package>

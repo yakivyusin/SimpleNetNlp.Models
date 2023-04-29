@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-      <CopyLexSourcePath Include="$(ProjectDir)nlp-models\lexparser\**\*.*" /> 
-	</ItemGroup>
-    <Target Name="LexParserModelCopy" AfterTargets="Build">
-        <Copy SourceFiles="@(CopyLexSourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\lexparser\%(CopySourcePath.RecursiveDir)" SkipUnchangedFiles="true" />
-    </Target>
-</Project>

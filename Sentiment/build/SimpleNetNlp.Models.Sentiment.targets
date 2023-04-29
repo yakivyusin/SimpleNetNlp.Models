@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-      <CopySentSourcePath Include="$(ProjectDir)nlp-models\sentiment\**\*.*" /> 
-	</ItemGroup>
-    <Target Name="SentimentModelCopy" AfterTargets="Build">
-        <Copy SourceFiles="@(CopySentSourcePath)" DestinationFolder="$(TargetDir)\edu\stanford\nlp\models\sentiment\%(CopySourcePath.RecursiveDir)" SkipUnchangedFiles="true" />
-    </Target>
-</Project>
