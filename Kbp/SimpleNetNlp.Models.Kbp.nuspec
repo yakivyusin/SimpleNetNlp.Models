@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>SimpleNetNlp.Models.Kbp</id>
+    <version>4.5.0</version>
+    <authors>yakivyusin</authors>
+    <owners>yakivyusin</owners>
+    <projectUrl>https://github.com/yakivyusin/SimpleNetNlp</projectUrl>
+    <description>Resource package that contains KBP model for SimpleNetNlp project (simple C# wrapper for Stanford CoreNLP).</description>
+    <copyright>Copyright 2023</copyright>
+    <tags>nlp stanford CoreNLP kbp</tags>
+  </metadata>
+  <files>
+    <file src="SimpleNetNlp.Models.Kbp.props" target="buildTransitive" />
+    <file src="nlp-models\**" target="buildTransitive\edu\stanford\nlp\models\kbp\english" />  
+  </files>
+</package>
