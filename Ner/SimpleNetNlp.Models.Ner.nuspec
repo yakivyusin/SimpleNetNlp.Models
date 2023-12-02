@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>SimpleNetNlp.Models.Ner</id>
-    <version>4.5.0</version>
+    <version>4.5.5</version>
     <authors>yakivyusin</authors>
     <owners>yakivyusin</owners>
     <projectUrl>https://github.com/yakivyusin/SimpleNetNlp</projectUrl>

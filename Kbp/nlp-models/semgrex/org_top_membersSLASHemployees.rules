@@ -6,7 +6,7 @@ macro TOPTITLE = lemma:/[eE]xecutive|[cC]hairman|[pP]resident|[cC]hief|[hH]ead|[
 {${TOPTITLE}} >/(prep_|nmod:|obl:)(of|at)/ ( {ner:ORGANIZATION}=entity >/appos/ {ner:PERSON}=slot )
 ( {${TOPTITLE}} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity ) >/nsubj.*/ {ner:PERSON}=slot >cop {}
 {tag:/VB.*/} >nsubj {ner:PERSON}=slot >/(prep_|nmod:|obl:)as/ ( {${TOPTITLE}} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity )
-{}=slot >/acl:relclause/ ({tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:|obl:)as/ ( {${TOPTITLE}} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity ) )
+{}=slot >/acl:relcl/ ({tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:|obl:)as/ ( {${TOPTITLE}} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity ) )
 {${TOPTITLE}} >/nmod:poss/ {ner:ORGANIZATION}=entity >/appos/ {ner:PERSON}=slot
 {ner:PERSON}=slot >appos ( {${TOPTITLE}} >/(nmod:|obl:)(poss|of|at)/ {ner:ORGANIZATION}=entity )
 {${TOPTITLE}} >/(prep_|nmod:|obl:)(of|at|poss)/ {ner:ORGANIZATION}=entity >/nn|compound|flat|amod|appos/ {ner:PERSON}=slot
@@ -17,7 +17,7 @@ macro TOPTITLE = lemma:/[eE]xecutive|[cC]hairman|[pP]resident|[cC]hief|[hH]ead|[
 {lemma:/speaker|head|chief/} >/(prep_|nmod:|obl:)(of|at)/ ( {ner:ORGANIZATION}=entity >/appos/ {ner:PERSON}=slot )
 ( {lemma:/speaker|head|chief/} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity ) >/nsubj.*/ {ner:PERSON}=slot >cop {}
 {tag:/VB.*/} >nsubj {ner:PERSON}=slot >/(prep_|nmod:|obl:)as/ ( {lemma:/speaker|head|chief/} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity )
-{}=slot >/acl:relclause/ ({tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:|obl:)as/ ( {lemma:/speaker|head|chief/} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity ) )
+{}=slot >/acl:relcl/ ({tag:/VB.*/} >nsubj {lemma:who} >/(prep_|nmod:|obl:)as/ ( {lemma:/speaker|head|chief/} >/(prep_|nmod:|obl:)(of|at)/ {ner:ORGANIZATION}=entity ) )
 {ner:ORGANIZATION}=entity >/nmod:poss/ ( {lemma:/speaker|head|chief/} >/appos/ {ner:PERSON}=slot )
 # SLOT's firm, ENTITY
 {lemma:/firm|company|business|association|corporation|organization|society/}  >/nmod:poss/ {ner:PERSON}=slot >/appos/ {ner:ORGANIZATION}=entity
